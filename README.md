@@ -3,8 +3,11 @@ En este repositorio publicaremos los avances del proyecto final de scripting
 
 Integrantes: 
 Juanita Palacio 
+
 David Galvis
+
 Luciana Gutierrez
+
 
 ## Propuesta de proyecto corregida: 
 Alcance:
