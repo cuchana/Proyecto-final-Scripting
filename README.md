@@ -50,3 +50,14 @@ Correciones dadas en el avance 1 y como planeamos implementarlas:
 2. ¿Que queremos que haga el usuario con la imagen?
    Queremos que el usuario pueda intervenir una imagen de distintas formas, para así lograr hacer editor/tablero de fotos digital, vamos a añadir una lista de los comandos y una paleta de colores accesible (para mejorar el UI).
    
+## Pruebas unitarias
+Primero que todo, para poder hacer las pruebas se nesecita tener instalado Node.js y tener visual studio 2022 con la extension de node.js ya que estamos trabajando con p5.js entonces no se puede hacer directamenente en la herramienta, en el visual studio se encontrara una parte de la logica del proyecto de p5.js.
+
+Con estas pruebas el objetivo es ver si el funcionamiento del patron de diseño Memento y la gestion de trazos en el tablero estaban funcionando correctamente.
+
+Como iniciarlas:
+1. Clonar el archivo del repositorio y despues click derecho en el nombre y show in explorer.
+2. Ingresar a la carpeta Pruebas unitarias\NodeConsoleApp2, despues click derecho en el espacio vacio y abrir en terminal.
+3. Copiar "npm test" en la terminal y te saldran las pruebas hechas.
+
+Se muestra que, efectivamente, las pruebas de estos dos procesos han salido exitosas y funcionan como se esperaria.
