@@ -48,5 +48,5 @@ Correciones dadas en el avance 1 y como planeamos implementarlas:
    Formas de corregirlo: Podemos usar memento o state (sugerencias del profe), con memento podemos encapsular tpdps lps trazos como un snapshot, y con state seria tener estados como drawing, idle, erasing y editing. Con chat gpt exploramos el patrón command, encapsulando cada acción como un objeto que se puede deshacer o rehacer.
 
 2. ¿Que queremos que haga el usuario con la imagen?
-   Queremos que el usuario pueda intervenir una imagen de distintas formas, para así lograr hacer una "obra de arte" generativa, vamos a añadir una lista de los comandos y una paleta de colores accesible (para mejorar el UI).
+   Queremos que el usuario pueda intervenir una imagen de distintas formas, para así lograr hacer editor/tablero de fotos digital, vamos a añadir una lista de los comandos y una paleta de colores accesible (para mejorar el UI).
    
