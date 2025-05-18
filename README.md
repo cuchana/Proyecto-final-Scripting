@@ -1,8 +1,7 @@
 # Proyecto-final-Scripting
 En este repositorio publicaremos los avances del proyecto final de scripting
 
-Integrantes: 
-Juanita Palacio 
+Integrantes:  
 
 David Galvis
 
@@ -41,3 +40,13 @@ Extras: Integración con micro:bit mediante Web Serial API.
 ¿Por qué decidimos continuar con esta propuesta?
 Al ser la mayoria de la linea de experiencias creemos que esta propuesta se adapta mejor a nuestros conocimientos y habilidades, por otro lado creemos que podemos incluir las tematicas del curso en este proyecto usando la mayor parte de conceptos adquiridos, despues de leer las correcciones planteadas por el profesor pudimos hacer los ajustes necesarios a la propuesta y ver que es algo con un buen potencial. 
 
+# Avance #2 proyecto: Fase final
+
+Correciones dadas en el avance 1 y como planeamos implementarlas:
+
+1. Aplicacion de patrones de diseño
+   Formas de corregirlo: Podemos usar memento o state (sugerencias del profe), con memento podemos encapsular tpdps lps trazos como un snapshot, y con state seria tener estados como drawing, idle, erasing y editing. Con chat gpt exploramos el patrón command, encapsulando cada acción como un objeto que se puede deshacer o rehacer.
+
+2. ¿Que queremos que haga el usuario con la imagen?
+   Queremos que el usuario pueda intervenir una imagen de distintas formas, para así lograr hacer una "obra de arte" generativa, vamos a añadir una lista de los comandos y una paleta de colores accesible (para mejorar el UI).
+   
