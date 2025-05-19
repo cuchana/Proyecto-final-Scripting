@@ -7,6 +7,15 @@ David Galvis
 
 Luciana Gutierrez
 
+Link para acceder al codigo y editarlo: https://editor.p5js.org/luciana.gp0531/sketches/Bz3b9MuPT
+
+Link para ejecutar directamente el avance: https://editor.p5js.org/luciana.gp0531/full/Bz3b9MuPT
+
+1. Abrir el link
+2. Adjuntar la imagen que queremos
+3. Empezar a dibujar con el mouse, 
+4. Para deshacer presionar Z y rehacer Y
+
 
 ## Propuesta de proyecto corregida: 
 Alcance:
