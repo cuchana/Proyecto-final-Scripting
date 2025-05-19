@@ -1,5 +1,6 @@
-Profe no pudimos conseguir el microbit prestado entonces te vamos a explicar como planeabamos implementarlo pero pues no funcionó
-Queriamos que con el boton a cambiaramos a modo dibujar y el b a modo borrador, y el acelerometro que lee los datos en x y y dibujara, para lograr esto hay que añadir en las variables globales esto
+Profe no pudimos conseguir el microbit prestado entonces te vamos a explicar como planeabamos implementarlo
+
+Queriamos que con el boton A cambiaramos a modo dibujar y el B a modo borrador, y el acelerometro que lee los datos en X y Y dibujara, para lograr esto hay que añadir en las variables globales esto
 
 ```js
 let serial;
