@@ -170,24 +170,29 @@ function draw() {
         currentStroke.draw();
     }
 }
+// nos dimos cuenta que al interactuar con cosas de la interfaz se leen trazos en la pantalla, entonces vamos a distinguir cuando esta usando la interfaz vs el tablero
+function isMouseOverUI() {
+    return (
+        mouseX < 250 && mouseY < 450 // Área aproximada donde están los controles
+    );
+}
 
 //evento del mouse
 function mousePressed() {
     //si es diferente a isEraser empieza a dibujar
+      if (isMouseOverUI()) return;
     if (!isEraser) {
         currentStroke = new Stroke([], selectedColor, brushSize);
     }
 }
-
 function mouseDragged() {
    //cuando isEraser borra puntos
+   if (isMouseOverUI()) return;
+
     if (isEraser) {
         for (let i = strokes.length - 1; i >= 0; i--) {
             let stroke = strokes[i];
-            // Remover puntos cercanos al mouse
             stroke.points = stroke.points.filter(pt => dist(mouseX, mouseY, pt.x, pt.y) > eraserRadius);
-
-            // Si se eliminaron todos los puntos del trazo, borra el trazo
             if (stroke.points.length === 0) {
                 undoStack.push(strokes.splice(i, 1)[0]);
                 redoStack = new Stack();
@@ -202,10 +207,12 @@ function mouseDragged() {
 
 function mouseReleased() {
         // Al soltar mouse, guardar trazo en lista y pila
+if (isMouseOverUI()) return;
+
     if (!isEraser && currentStroke && currentStroke.points.length > 0) {
         strokes.push(currentStroke);
         undoStack.push(currentStroke);
-        redoStack = new Stack(); // limpiar redo
+        redoStack = new Stack();
     }
     currentStroke = null;
 }
