@@ -1,10 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\david\\source\\repos\\NodeConsoleApp2\\",
+  "WorkspaceRootPath": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Proyecto-final-Scripting\\Pruebas unitarias\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\david\\source\\repos\\NodeConsoleApp2\\NodeConsoleApp2\\stack.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NodeConsoleApp2\\stack.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{06EB4084-642A-F058-3E0A-177061F47967}|NodeConsoleApp2\\NodeConsoleApp2.esproj|c:\\users\\david\\onedrive\\documentos\\github\\proyecto-final-scripting\\pruebas unitarias\\nodeconsoleapp2\\trazos.test.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{06EB4084-642A-F058-3E0A-177061F47967}|NodeConsoleApp2\\NodeConsoleApp2.esproj|solutionrelative:nodeconsoleapp2\\trazos.test.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06EB4084-642A-F058-3E0A-177061F47967}|NodeConsoleApp2\\NodeConsoleApp2.esproj|c:\\users\\david\\onedrive\\documentos\\github\\proyecto-final-scripting\\pruebas unitarias\\nodeconsoleapp2\\stroke.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{06EB4084-642A-F058-3E0A-177061F47967}|NodeConsoleApp2\\NodeConsoleApp2.esproj|solutionrelative:nodeconsoleapp2\\stroke.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06EB4084-642A-F058-3E0A-177061F47967}|NodeConsoleApp2\\NodeConsoleApp2.esproj|c:\\users\\david\\onedrive\\documentos\\github\\proyecto-final-scripting\\pruebas unitarias\\nodeconsoleapp2\\stack.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{06EB4084-642A-F058-3E0A-177061F47967}|NodeConsoleApp2\\NodeConsoleApp2.esproj|solutionrelative:nodeconsoleapp2\\stack.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,12 +31,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "stack.js",
-              "DocumentMoniker": "C:\\Users\\david\\source\\repos\\NodeConsoleApp2\\NodeConsoleApp2\\stack.js",
-              "RelativeDocumentMoniker": "NodeConsoleApp2\\stack.js",
-              "ToolTip": "C:\\Users\\david\\source\\repos\\NodeConsoleApp2\\NodeConsoleApp2\\stack.js",
-              "RelativeToolTip": "NodeConsoleApp2\\stack.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBcAAAAAAAAAAAAAAA==",
+              "Title": "trazos.test.js",
+              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Proyecto-final-Scripting\\Pruebas unitarias\\NodeConsoleApp2\\trazos.test.js",
+              "RelativeDocumentMoniker": "NodeConsoleApp2\\trazos.test.js",
+              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Proyecto-final-Scripting\\Pruebas unitarias\\NodeConsoleApp2\\trazos.test.js",
+              "RelativeToolTip": "NodeConsoleApp2\\trazos.test.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-19T00:01:44.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "stroke.js",
+              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Proyecto-final-Scripting\\Pruebas unitarias\\NodeConsoleApp2\\stroke.js",
+              "RelativeDocumentMoniker": "NodeConsoleApp2\\stroke.js",
+              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Proyecto-final-Scripting\\Pruebas unitarias\\NodeConsoleApp2\\stroke.js",
+              "RelativeToolTip": "NodeConsoleApp2\\stroke.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-19T00:01:38.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Stack.js",
+              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Proyecto-final-Scripting\\Pruebas unitarias\\NodeConsoleApp2\\Stack.js",
+              "RelativeDocumentMoniker": "NodeConsoleApp2\\Stack.js",
+              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Proyecto-final-Scripting\\Pruebas unitarias\\NodeConsoleApp2\\Stack.js",
+              "RelativeToolTip": "NodeConsoleApp2\\Stack.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-05-18T19:04:18.042Z",
               "EditorCaption": ""

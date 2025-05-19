@@ -1,9 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\david\\source\\repos\\NodeConsoleApp2\\",
+  "WorkspaceRootPath": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Proyecto-final-Scripting\\Pruebas unitarias\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{06EB4084-642A-F058-3E0A-177061F47967}|NodeConsoleApp2\\NodeConsoleApp2.esproj|c:\\users\\david\\source\\repos\\nodeconsoleapp2\\nodeconsoleapp2\\stack.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{06EB4084-642A-F058-3E0A-177061F47967}|NodeConsoleApp2\\NodeConsoleApp2.esproj|c:\\users\\david\\onedrive\\documentos\\github\\proyecto-final-scripting\\pruebas unitarias\\nodeconsoleapp2\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{06EB4084-642A-F058-3E0A-177061F47967}|NodeConsoleApp2\\NodeConsoleApp2.esproj|solutionrelative:nodeconsoleapp2\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06EB4084-642A-F058-3E0A-177061F47967}|NodeConsoleApp2\\NodeConsoleApp2.esproj|c:\\users\\david\\onedrive\\documentos\\github\\proyecto-final-scripting\\pruebas unitarias\\nodeconsoleapp2\\trazos.test.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{06EB4084-642A-F058-3E0A-177061F47967}|NodeConsoleApp2\\NodeConsoleApp2.esproj|solutionrelative:nodeconsoleapp2\\trazos.test.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06EB4084-642A-F058-3E0A-177061F47967}|NodeConsoleApp2\\NodeConsoleApp2.esproj|c:\\users\\david\\onedrive\\documentos\\github\\proyecto-final-scripting\\pruebas unitarias\\nodeconsoleapp2\\stroke.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{06EB4084-642A-F058-3E0A-177061F47967}|NodeConsoleApp2\\NodeConsoleApp2.esproj|solutionrelative:nodeconsoleapp2\\stroke.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06EB4084-642A-F058-3E0A-177061F47967}|NodeConsoleApp2\\NodeConsoleApp2.esproj|c:\\users\\david\\onedrive\\documentos\\github\\proyecto-final-scripting\\pruebas unitarias\\nodeconsoleapp2\\stack.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{06EB4084-642A-F058-3E0A-177061F47967}|NodeConsoleApp2\\NodeConsoleApp2.esproj|solutionrelative:nodeconsoleapp2\\stack.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
@@ -23,14 +35,54 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Stack.js",
-              "DocumentMoniker": "C:\\Users\\david\\source\\repos\\NodeConsoleApp2\\NodeConsoleApp2\\Stack.js",
-              "RelativeDocumentMoniker": "NodeConsoleApp2\\Stack.js",
-              "ToolTip": "C:\\Users\\david\\source\\repos\\NodeConsoleApp2\\NodeConsoleApp2\\Stack.js",
-              "RelativeToolTip": "NodeConsoleApp2\\Stack.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBcAAAAAAAAAAAAAAA==",
+              "Title": "package.json",
+              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Proyecto-final-Scripting\\Pruebas unitarias\\NodeConsoleApp2\\package.json",
+              "RelativeDocumentMoniker": "NodeConsoleApp2\\package.json",
+              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Proyecto-final-Scripting\\Pruebas unitarias\\NodeConsoleApp2\\package.json",
+              "RelativeToolTip": "NodeConsoleApp2\\package.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-19T00:02:35.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "trazos.test.js",
+              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Proyecto-final-Scripting\\Pruebas unitarias\\NodeConsoleApp2\\trazos.test.js",
+              "RelativeDocumentMoniker": "NodeConsoleApp2\\trazos.test.js",
+              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Proyecto-final-Scripting\\Pruebas unitarias\\NodeConsoleApp2\\trazos.test.js",
+              "RelativeToolTip": "NodeConsoleApp2\\trazos.test.js",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAH0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-05-18T19:04:18.042Z"
+              "WhenOpened": "2025-05-19T00:01:44.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "stroke.js",
+              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Proyecto-final-Scripting\\Pruebas unitarias\\NodeConsoleApp2\\stroke.js",
+              "RelativeDocumentMoniker": "NodeConsoleApp2\\stroke.js",
+              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Proyecto-final-Scripting\\Pruebas unitarias\\NodeConsoleApp2\\stroke.js",
+              "RelativeToolTip": "NodeConsoleApp2\\stroke.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-19T00:01:38.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Stack.js",
+              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Proyecto-final-Scripting\\Pruebas unitarias\\NodeConsoleApp2\\Stack.js",
+              "RelativeDocumentMoniker": "NodeConsoleApp2\\Stack.js",
+              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Proyecto-final-Scripting\\Pruebas unitarias\\NodeConsoleApp2\\Stack.js",
+              "RelativeToolTip": "NodeConsoleApp2\\Stack.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-18T19:04:18.042Z",
+              "EditorCaption": ""
             }
           ]
         }
