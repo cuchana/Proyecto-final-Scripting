@@ -1,17 +1,21 @@
+// Patrones de diseño: State (cambia en estado de dibujando o borrando), Memento (guarda el estado de un trazo, y el caretaker se encarga de guardar y restaurar los mementos)
+// CLase Stack, la usamos para implementar las pilas de deshacer/rehacer
 class Stack {
     constructor() {
         this.items = [];
     }
 
     push(item) {
-        this.items.push(item);
+        this.items.push(item); // añadir elemento al tope
     }
 
     pop() {
+        // Eliminar y devolver el ultimo elemento
         return this.items.length > 0 ? this.items.pop() : null;
     }
 
     peek() {
+        // Ver el ultimo elemento sin eliminarlo
         return this.items.length > 0 ? this.items[this.items.length - 1] : null;
     }
 
@@ -23,12 +27,13 @@ class Stack {
 // Clase Stroke: cada línea dibujada con su color y grosor
 class Stroke {
     constructor(points, color, weight) {
-        this.points = points;
-        this.color = color;
-        this.weight = weight;
+        this.points = points; //lista de puntos (vectores) del trazo
+        this.color = color; //color del trazo
+        this.weight = weight; // grosor del trazo
     }
 
     draw() {
+        //para mostrar el trazo dibujado en pantalla
         stroke(this.color);
         strokeWeight(this.weight);
         noFill();
@@ -39,7 +44,7 @@ class Stroke {
         endShape();
     }
 }
-
+//Variables globales
 let strokes = [];
 let undoStack = new Stack();
 let redoStack = new Stack();
@@ -50,17 +55,20 @@ let imgWidth = 0;
 let imgHeight = 0;
 let imgX = 0;
 let imgY = 0;
+//Variables para la cosa de ui
 let filterSelect;
 let saveButton;
 let eraserButton;
 let selectedColor = '#ff0000';
 let colorPicker;
 let isEraser = false;
+// Tamaños
 let brushSlider;
 let eraserSlider;
 let brushSize = 3;
 let eraserRadius = 10;
 
+//Configuracion del proyecto
 function setup() {
     createCanvas(windowWidth, windowHeight);
     background(240);
@@ -77,21 +85,21 @@ function setup() {
     imgInput = createFileInput(handleFile);
     imgInput.position(10, 50);
 
-    // Botón para activar modo borrador
+    // boton para borrar, aqui cambiamos el state
     eraserButton = createButton('Borrador');
     eraserButton.position(10, 90);
     eraserButton.mousePressed(() => {
         isEraser = true;
     });
 
-    // Botón para guardar dibujo
+    // Botón para guardar dibujo como imagen
     saveButton = createButton('Guardar');
     saveButton.position(10, 130);
     saveButton.mousePressed(() => {
         saveCanvas('mi_dibujo', 'png');
     });
 
-    // Filtros
+    // Menu donde podemos seleccionar filtros de bibliotecas de p5js
     filterSelect = createSelect();
     filterSelect.position(10, 170);
     filterSelect.option('Sin filtro');
@@ -135,11 +143,13 @@ function setup() {
     });
 }
 
+// Bucle principal de dibujo
 function draw() {
     background(240);
 
     if (img) {
         image(img, imgX, imgY, imgWidth, imgHeight);
+        //aplica filtro si esta activado
         switch (filterSelect.value()) {
             case 'GRIS': filter(GRAY); break;
             case 'INVERTIR': filter(INVERT); break;
@@ -160,21 +170,29 @@ function draw() {
         currentStroke.draw();
     }
 }
+// nos dimos cuenta que al interactuar con cosas de la interfaz se leen trazos en la pantalla, entonces vamos a distinguir cuando esta usando la interfaz vs el tablero
+function isMouseOverUI() {
+    return (
+        mouseX < 250 && mouseY < 450 // Área aproximada donde están los controles
+    );
+}
 
+//evento del mouse
 function mousePressed() {
+    //si es diferente a isEraser empieza a dibujar
+      if (isMouseOverUI()) return;
     if (!isEraser) {
         currentStroke = new Stroke([], selectedColor, brushSize);
     }
 }
-
 function mouseDragged() {
+   //cuando isEraser borra puntos
+   if (isMouseOverUI()) return;
+
     if (isEraser) {
         for (let i = strokes.length - 1; i >= 0; i--) {
             let stroke = strokes[i];
-            // Remover puntos cercanos al mouse
             stroke.points = stroke.points.filter(pt => dist(mouseX, mouseY, pt.x, pt.y) > eraserRadius);
-
-            // Si se eliminaron todos los puntos del trazo, borra el trazo
             if (stroke.points.length === 0) {
                 undoStack.push(strokes.splice(i, 1)[0]);
                 redoStack = new Stack();
@@ -188,10 +206,13 @@ function mouseDragged() {
 }
 
 function mouseReleased() {
+        // Al soltar mouse, guardar trazo en lista y pila
+if (isMouseOverUI()) return;
+
     if (!isEraser && currentStroke && currentStroke.points.length > 0) {
         strokes.push(currentStroke);
         undoStack.push(currentStroke);
-        redoStack = new Stack(); // limpiar redo
+        redoStack = new Stack();
     }
     currentStroke = null;
 }
@@ -212,7 +233,7 @@ function keyPressed() {
         }
     }
 }
-
+// esta es la funcion para cargar los archivos
 function handleFile(file) {
     if (file.type === 'image') {
         loadImage(file.data, loadedImg => {
